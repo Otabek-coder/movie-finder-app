@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import CardList from "./components/CardList";
 import styled from "styled-components";
 import Filter from "./components/filter/Filter";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Footer from "./components/Footer";
 
 import data1 from "./data/data1.json";
@@ -24,11 +23,6 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-});
 
 export const ITEMS_PERPAGE_DEFAULT = 10;
 export const paginationOptions = [5, ITEMS_PERPAGE_DEFAULT, 15, 20];
